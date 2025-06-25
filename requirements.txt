@@ -1,0 +1,13 @@
+# Markdown转Word转换器依赖包
+# 跨平台兼容 (Windows/macOS/Linux)
+
+python-docx>=0.8.11
+markdown>=3.4.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+Pillow>=9.0.0
+python-markdown-math>=0.8
+
+# 可选增强包
+pygments>=2.10.0  # 代码高亮
+markdown-extensions>=0.1.0  # 额外的Markdown扩展

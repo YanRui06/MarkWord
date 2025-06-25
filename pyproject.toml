@@ -1,0 +1,55 @@
+[project]
+name = "markdown-to-word-converter"
+version = "1.0.0"
+description = "跨平台Markdown到Word文档转换器"
+authors = [
+    {name = "GitHub Copilot"}
+]
+keywords = ["markdown", "word", "converter", "cross-platform"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Office/Business :: Office Suites",
+    "Topic :: Text Processing :: Markup",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8", 
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "python-docx>=0.8.11",
+    "markdown>=3.4.0",
+    "beautifulsoup4>=4.11.0",
+    "lxml>=4.9.0",
+    "Pillow>=9.0.0",
+    "python-markdown-math>=0.8",
+    "pygments>=2.10.0",
+    "markdown-extensions>=0.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.8",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/example/markdown-to-word-converter"
+"Bug Reports" = "https://github.com/example/markdown-to-word-converter/issues"
+"Source" = "https://github.com/example/markdown-to-word-converter"
+
+[project.scripts]
+md2word = "src.launcher:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
