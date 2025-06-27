@@ -62,9 +62,9 @@ fi
 echo "正在检查并安装依赖..."
 pip install -r requirements.txt --quiet
 
-# 启动程序
+# 启动程序 - 修正这里的路径
 echo "启动转换器..."
-$PYTHON_CMD ../main.py
+$PYTHON_CMD main.py
 
 echo
 echo "程序已退出。"

@@ -10,4 +10,3 @@ python-markdown-math>=0.8
 
 # 可选增强包
 pygments>=2.10.0  # 代码高亮
-markdown-extensions>=0.1.0  # 额外的Markdown扩展
